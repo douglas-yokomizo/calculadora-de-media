@@ -28,7 +28,7 @@ function adicionaLinha() {
         let conteudoLinha = '<tr>';
         conteudoLinha += `<td> ${inputAtividade.value} </td>`;
         conteudoLinha += `<td> ${inputNota.value} </td>`;
-        conteudoLinha += `<td> ${inputNota.value >= 7 ? imgAprovado : imgReprovado} </td>`;
+        conteudoLinha += `<td> ${inputNota.value >= notaMinima ? imgAprovado : imgReprovado} </td>`;
         novaLinha += conteudoLinha
 
         atividades.push(inputAtividade.value)
