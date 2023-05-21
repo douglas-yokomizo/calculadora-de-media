@@ -6,7 +6,7 @@ const atividades = [];
 const notas = [];
 const spanAprovado = '<span class="resultado aprovado">Aprovado</span>'
 const spanReprovado = '<span class="resultado reprovado">Reprovado</span>'
-const notaMinima = prompt("Digite a nota mínima")
+const notaMinima = parseFloat(prompt("Digite a nota mínima"))
 
 form.addEventListener('submit', function (e) {
     e.preventDefault();
